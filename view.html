@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Saim Arts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #000000;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #ffffff;
+            
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+
+        div {
+            margin-top: 20px;
+            background-color: #000000;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        About Me
+    </h1>
+    <p>
+        Hello! My name is Saim, and I am an artist who loves to create beautiful and inspiring artwork. I specialize in
+        digital art, painting, and sketching. My passion for art drives me to constantly improve my skills and explore
+        new techniques.
+</body>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .carousel {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .carousel img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .carousel img.hidden {
+        opacity: 0;
+        z-index: 0;
+    }
+
+    .carousel img.visible {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    h1 {
+        color: aqua;
+    }
+</style>
+</head>
+
+<body>
+   
+    
+
+    <div class="carousel">
+        <img src="c1.jpg" class="visible" alt="Image 1">
+        <img src="c2.jpg" class="hidden" alt="Image 2">
+        <img src="c3.jpg" class="hidden" alt="Image 3">
+        <img src="c4.jpg" class="hidden" alt="image 4">
+        <img src="c5.jpg" class="hidden" alt="Image 5">
+        <img src="acrylic.jpg" class="hidden" alt="Image 3">
+        <img src="acrylic10.jpg" class="hidden" alt="Image 3">
+        <img src="acrylic5.jpg" class="hidden" alt="Image 3">
+        <img src="acrylic2.jpg" class="hidden" alt="Image 3">
+        <img src="acrylic3.jpg" class="hidden" alt="Image 3">
+        <img src="acrylic6.jpg" class="hidden" alt="Image 3">
+        <img src="acrylic7.jpg" class="hidden" alt="Image 3">
+        <img src="acrylic8.jpg" class="hidden" alt="Image 3">
+        <img src="acrylic9.jpg" class="hidden" alt="Image 3">
+        <img src="acrylic4.jpg" class="hidden" alt="Image 3">
+        <img src="oil.jpg" class="hidden" alt="Image 3">
+        <img src="oil2.jpg" class="hidden" alt="Image 3">
+        <img src="oil1.jpg" class="hidden" alt="Image 3">
+        <img src="pen.jpg" class="hidden" alt="Image 3">
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.carousel img');
+        let currentIndex = 0;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('visible');
+            images[currentIndex].classList.add('hidden');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.remove('hidden');
+            images[currentIndex].classList.add('visible');
+        }
+
+        setInterval(showNextImage, 2000);
+    </script>
+
+    </html>
+<div>
+    <p>Here is some of my artwork</p>
+    <p><a href="select.html">click to view </a></p>
+</div>
+</body>
+<footer>
+    <div>
+        &copy; 2024 Saim Art Gallery Karachi Pakistan
+        ALL RIGHTS RESERVED
+    </div>
+</footer>
+
+
+</html>
